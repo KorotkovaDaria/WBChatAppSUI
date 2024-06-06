@@ -14,8 +14,7 @@ struct VerificationView: View {
         NavigationStack {
             Spacer()
             Text("Введите номер телефона")
-                .font(.system(size: 24))
-                .bold()
+                .textStyle(with: .neading2)
                 .foregroundColor(Resources.Colors.NeutralColor.active)
             Spacer()
             Spacer()
@@ -24,7 +23,7 @@ struct VerificationView: View {
                         Button {
                             dismiss()
                         } label: {
-                            Image("variant=chevron_left")
+                            Image(Resources.ImageTitle.DefaultImage.chevronLeft)
                                 .renderingMode(.template)
                                 .foregroundColor(Resources.Colors.NeutralColor.active)
                             

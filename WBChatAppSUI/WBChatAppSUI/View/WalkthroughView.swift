@@ -10,7 +10,6 @@ import SwiftUI
 struct WalkthroughView: View {
     
     @State var isPresented = false
-    @State var isPressed = false
     
     var body: some View {
         VStack {
@@ -35,7 +34,6 @@ struct WalkthroughView: View {
             
             Button("Начать общаться") {
                 isPresented.toggle()
-                isPressed.toggle()
             }
             .buttonStyle(StatefulButtonStyle(size: CGSize(width: 327, height: 52), state: .fillNormal))
             

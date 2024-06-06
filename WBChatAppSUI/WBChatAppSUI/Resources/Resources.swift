@@ -48,6 +48,7 @@ enum Resources {
     enum ImageTitle {
         enum DefaultImage {
             static let Illustration  = "Illustration"
+            static let chevronLeft   = "variant=chevron_left"
         }
         enum SystemImage {
             static let tabBarPerson = "person.2"
