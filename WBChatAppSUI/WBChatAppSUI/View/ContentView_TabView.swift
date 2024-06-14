@@ -7,19 +7,12 @@
 
 import SwiftUI
 
-enum Tabs: Hashable {
-    case contacts
-    case chats
-    case more
-}
 
-final class Router: ObservableObject {
-    @Published var selectedTab: Tabs = .contacts
-}
 
 struct ContentView_TabView: View {
-    @ObservedObject var router: Router = .init()
-
+    //@ObservedObject var router: Router = .init()
+    @StateObject var router = Router.shared
+    
     var body: some View {
         TabView(selection: $router.selectedTab) {
             ContactsScreen().tabItem { Label("Контакты", systemImage: Resources.ImageTitle.SystemImage.tabBarPerson) }.tag(Tabs.contacts)
