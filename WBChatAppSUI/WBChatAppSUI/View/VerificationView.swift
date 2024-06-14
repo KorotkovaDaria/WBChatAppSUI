@@ -12,24 +12,29 @@ struct VerificationView: View {
     
     var body: some View {
         NavigationStack {
-            Spacer()
-            Text("Введите номер телефона")
-                .textStyle(with: .neading2)
-                .foregroundColor(Resources.Colors.NeutralColor.active)
-            Spacer()
-            Spacer()
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(Resources.ImageTitle.DefaultImage.chevronLeft)
-                                .renderingMode(.template)
-                                .foregroundColor(Resources.Colors.NeutralColor.active)
-                            
+            ZStack {
+                Resources.Colors.NeutralColor.whiteForBG
+                    .ignoresSafeArea()
+                VStack {
+                    Spacer()
+                    Text("Введите номер телефона")
+                        .textStyle(with: .neading2)
+                        .foregroundColor(Resources.Colors.NeutralColor.active)
+                    Spacer()
+                    Spacer()
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarLeading) {
+                                Button {
+                                    dismiss()
+                                } label: {
+                                    Image(Resources.ImageTitle.DefaultImage.chevronLeft)
+                                        .renderingMode(.template)
+                                        .foregroundColor(Resources.Colors.NeutralColor.active)
+                                }
+                            }
                         }
-                    }
                 }
+            }
         }
     }
 }
