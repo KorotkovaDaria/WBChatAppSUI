@@ -18,8 +18,17 @@ struct ContactsScreen: View {
         Contact(name: "Лиса Алиса", isSrorying: true, isOnline: false, lastSeen: Date(timeIntervalSinceNow: -1800), avatar: nil, phoneNumber: "+7 999 999-99-93")
     ]
     
+    @State private var searchText: String = ""
     @State private var selectedContact: Contact? = nil
     @State private var navigateToProfile: Bool = false
+    
+    var filteredContacts: [Contact] {
+        if searchText.isEmpty {
+            return contacts
+        } else {
+            return contacts.filter { $0.name.lowercased().contains(searchText.lowercased()) }
+        }
+    }
     
     var body: some View {
         NavigationStack {
@@ -27,9 +36,9 @@ struct ContactsScreen: View {
                 Resources.Colors.NeutralColor.whiteForBG
                     .edgesIgnoringSafeArea(.all)
                 VStack {
-                    SearchBarView()
+                    SearchBarView(searchText: $searchText)
                         .padding(.top, 16)
-                    List(contacts) { contact in
+                    List(filteredContacts) { contact in
                         ContactRow(contact: contact)
                             .onTapGesture {
                                 selectedContact = contact
@@ -71,4 +80,3 @@ struct ContactsScreen_Previews: PreviewProvider {
         ContactsScreen()
     }
 }
-
