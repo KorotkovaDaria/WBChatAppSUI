@@ -23,7 +23,6 @@
 		4E7E63F02C1C403D00130460 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7E63EF2C1C403D00130460 /* WidgetKit.framework */; };
 		4E7E63F22C1C403D00130460 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7E63F12C1C403D00130460 /* SwiftUI.framework */; };
 		4E7E63F52C1C403D00130460 /* WBWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E63F42C1C403D00130460 /* WBWidgetBundle.swift */; };
-		4E7E63F72C1C403D00130460 /* WBWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E63F62C1C403D00130460 /* WBWidgetLiveActivity.swift */; };
 		4E7E63F92C1C403D00130460 /* WBWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E63F82C1C403D00130460 /* WBWidget.swift */; };
 		4E7E63FC2C1C403F00130460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E63FB2C1C403F00130460 /* Assets.xcassets */; };
 		4E7E63FE2C1C403F00130460 /* WBWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E63FA2C1C403D00130460 /* WBWidget.intentdefinition */; };
@@ -79,7 +78,6 @@
 		4E7E63EF2C1C403D00130460 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4E7E63F12C1C403D00130460 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		4E7E63F42C1C403D00130460 /* WBWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetBundle.swift; sourceTree = "<group>"; };
-		4E7E63F62C1C403D00130460 /* WBWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetLiveActivity.swift; sourceTree = "<group>"; };
 		4E7E63F82C1C403D00130460 /* WBWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidget.swift; sourceTree = "<group>"; };
 		4E7E63FA2C1C403D00130460 /* WBWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WBWidget.intentdefinition; sourceTree = "<group>"; };
 		4E7E63FB2C1C403F00130460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,8 +138,6 @@
 				4E78C49F2C1095B70046C527 /* View */,
 				4E78C4A32C1096570046C527 /* Screens */,
 				4E24260A2C104DF200FDCED4 /* Preview Content */,
-				4E78C4A42C109B9F0046C527 /* StatefulButtonStyle.swift */,
-				4E78C4A62C10A5D60046C527 /* StatefulTextStyle.swift */,
 			);
 			path = WBChatAppSUI;
 			sourceTree = "<group>";
@@ -168,6 +164,8 @@
 		4E78C4A02C1095FF0046C527 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4E78C4A42C109B9F0046C527 /* StatefulButtonStyle.swift */,
+				4E78C4A62C10A5D60046C527 /* StatefulTextStyle.swift */,
 				4E3A330D2C106C8300BFB995 /* Resources.swift */,
 				4E2426082C104DF200FDCED4 /* Assets.xcassets */,
 			);
@@ -206,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				4E7E63F42C1C403D00130460 /* WBWidgetBundle.swift */,
-				4E7E63F62C1C403D00130460 /* WBWidgetLiveActivity.swift */,
 				4E7E63F82C1C403D00130460 /* WBWidget.swift */,
 				4E7E64112C1C719000130460 /* WBWidgetEntryView.swift */,
 				4E7E63FA2C1C403D00130460 /* WBWidget.intentdefinition */,
@@ -357,7 +354,6 @@
 			files = (
 				4E7E63F92C1C403D00130460 /* WBWidget.swift in Sources */,
 				4E7E63F52C1C403D00130460 /* WBWidgetBundle.swift in Sources */,
-				4E7E63F72C1C403D00130460 /* WBWidgetLiveActivity.swift in Sources */,
 				4E7E63FE2C1C403F00130460 /* WBWidget.intentdefinition in Sources */,
 				4E7E64132C1C71C600130460 /* WBWidgetEntryView.swift in Sources */,
 			);

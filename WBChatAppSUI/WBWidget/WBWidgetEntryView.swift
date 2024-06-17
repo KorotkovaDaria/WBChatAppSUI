@@ -9,17 +9,40 @@ import WidgetKit
 import SwiftUI
 import Intents
 
-
 struct WBWidgetEntryView : View {
     var entry: Provider.Entry
-    var countMessage: Int = 5
     
     var body: some View {
         ZStack {
-            VStack {
-                Text("У вас \(countMessage) непрочитанных сообщений")
-                    .font(.headline)
+            Color("Neutral_Active")
+            VStack(spacing: 8) {
+                HStack(spacing: 24) {
+                    CirclePhoto(imageAvatar: entry.imageAvatars[0])
+                    CirclePhoto(imageAvatar: entry.imageAvatars[1])
+                    CirclePhoto(imageAvatar: entry.imageAvatars[2])
+                    CirclePhoto(imageAvatar: entry.imageAvatars[3])
+                }
+                HStack(spacing: 24) {
+                    CirclePhoto(imageAvatar: entry.imageAvatars[4])
+                    CirclePhoto(imageAvatar: entry.imageAvatars[5])
+                    CirclePhoto(imageAvatar: entry.imageAvatars[6])
+                    CirclePhoto(imageAvatar: entry.imageAvatars[7])
+                }
             }
+        }
+    }
+}
+
+struct CirclePhoto: View {
+    var imageAvatar: String
+    var body: some View {
+        HStack {
+            Image(imageAvatar)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 60, height: 60)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.white, lineWidth: 1))
         }
     }
 }
