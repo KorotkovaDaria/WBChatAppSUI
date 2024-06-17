@@ -17,7 +17,7 @@ struct Provider: IntentTimelineProvider {
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration, imageAvatars: ["Photo1", "Photo2", "Photo3", "Photo4", "Photo6", "Photo7", "Photo8", "Photo9"].shuffled())
+        let entry = SimpleEntry(date: Date(), configuration: configuration, imageAvatars: ["Photo1", "Photo2", "Photo3", "Photo4", "Photo6", "Photo7", "Photo8", "Photo9"].shuffled ())
         completion(entry)
     }
     
