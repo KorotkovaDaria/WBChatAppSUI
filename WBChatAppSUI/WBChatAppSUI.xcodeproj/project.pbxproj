@@ -45,6 +45,7 @@
 		4E4591552C1727C200025532 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		4E4591582C17372800025532 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		4E45915A2C173D0500025532 /* ProfileAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccountView.swift; sourceTree = "<group>"; };
+		4E6C3F7B2C22CB9000FE4C8E /* BuildingMaterialsFactory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BuildingMaterialsFactory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4E78C49D2C1094300046C527 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		4E78C4A42C109B9F0046C527 /* StatefulButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulButtonStyle.swift; sourceTree = "<group>"; };
 		4E78C4A62C10A5D60046C527 /* StatefulTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulTextStyle.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		4E2426032C104DEF00FDCED4 /* WBChatAppSUI */ = {
 			isa = PBXGroup;
 			children = (
+				4E6C3F7A2C22CB5A00FE4C8E /* HW6 */,
 				4E892B772C2054FD000735FB /* HW5 */,
 				4E2426062C104DEF00FDCED4 /* ContentView.swift */,
 				4E0174682C187885005234F8 /* Model */,
@@ -126,6 +128,14 @@
 				4E4591582C17372800025532 /* SearchBarView.swift */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		4E6C3F7A2C22CB5A00FE4C8E /* HW6 */ = {
+			isa = PBXGroup;
+			children = (
+				4E6C3F7B2C22CB9000FE4C8E /* BuildingMaterialsFactory.playground */,
+			);
+			path = HW6;
 			sourceTree = "<group>";
 		};
 		4E78C49F2C1095B70046C527 /* View */ = {
