@@ -25,7 +25,6 @@
 		4E78C49E2C1094300046C527 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78C49D2C1094300046C527 /* VerificationView.swift */; };
 		4E78C4A52C109B9F0046C527 /* StatefulButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78C4A42C109B9F0046C527 /* StatefulButtonStyle.swift */; };
 		4E78C4A72C10A5D60046C527 /* StatefulTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78C4A62C10A5D60046C527 /* StatefulTextStyle.swift */; };
-		4E892B792C20552E000735FB /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E892B782C20552E000735FB /* Bank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		4E78C49D2C1094300046C527 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		4E78C4A42C109B9F0046C527 /* StatefulButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulButtonStyle.swift; sourceTree = "<group>"; };
 		4E78C4A62C10A5D60046C527 /* StatefulTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulTextStyle.swift; sourceTree = "<group>"; };
-		4E892B782C20552E000735FB /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		4E892B7A2C2055BB000735FB /* Bank1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -174,7 +172,6 @@
 		4E892B772C2054FD000735FB /* HW5 */ = {
 			isa = PBXGroup;
 			children = (
-				4E892B782C20552E000735FB /* Bank.swift */,
 				4E892B7A2C2055BB000735FB /* Bank1.playground */,
 			);
 			path = HW5;
@@ -265,7 +262,6 @@
 				4E45915B2C173D0500025532 /* ProfileAccountView.swift in Sources */,
 				4E2426052C104DEF00FDCED4 /* WBChatAppSUIApp.swift in Sources */,
 				4E45914E2C1717E800025532 /* ContactModel.swift in Sources */,
-				4E892B792C20552E000735FB /* Bank.swift in Sources */,
 				4E45914C2C17151900025532 /* ContactRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
