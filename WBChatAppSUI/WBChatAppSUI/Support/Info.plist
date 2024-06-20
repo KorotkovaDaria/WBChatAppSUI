@@ -3,6 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>NSUserActivityTypes</key>
-	<array/>
+	<array>
+		<string>ConfigurationIntent</string>
+	</array>
 </dict>
 </plist>

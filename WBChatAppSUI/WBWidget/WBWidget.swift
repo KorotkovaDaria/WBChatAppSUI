@@ -11,13 +11,14 @@ import Intents
 
 struct Provider: IntentTimelineProvider {
     typealias Entry = SimpleEntry
+    var imageAvatarsArr = ["Photo1", "Photo2", "Photo3", "Photo4", "Photo6", "Photo7", "Photo8", "Photo9"].shuffled()
     
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent(), imageAvatars: ["Photo1", "Photo2", "Photo3", "Photo4", "Photo6", "Photo7", "Photo8", "Photo9"].shuffled())
+        SimpleEntry(date: Date(), configuration: ConfigurationIntent(), imageAvatars: imageAvatarsArr)
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration, imageAvatars: ["Photo1", "Photo2", "Photo3", "Photo4", "Photo6", "Photo7", "Photo8", "Photo9"].shuffled ())
+        let entry = SimpleEntry(date: Date(), configuration: configuration, imageAvatars: imageAvatarsArr)
         completion(entry)
     }
     
@@ -25,10 +26,9 @@ struct Provider: IntentTimelineProvider {
         var entries: [SimpleEntry] = []
         
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let imageAvatars = ["Photo1", "Photo2", "Photo3", "Photo4", "Photo6", "Photo7", "Photo8", "Photo9"].shuffled()
-            let entry = SimpleEntry(date: entryDate, configuration: configuration, imageAvatars: imageAvatars)
+        for minutOffset in 0..<10 {
+            let entryDate = Calendar.current.date(byAdding: .minute, value: minutOffset, to: currentDate)!
+            let entry = SimpleEntry(date: entryDate, configuration: configuration, imageAvatars: imageAvatarsArr)
             entries.append(entry)
         }
         let timeline = Timeline(entries: entries, policy: .atEnd)
