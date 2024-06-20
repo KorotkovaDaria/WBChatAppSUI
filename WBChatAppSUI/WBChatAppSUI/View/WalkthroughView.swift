@@ -12,38 +12,41 @@ struct WalkthroughView: View {
     @State var isPresented = false
     
     var body: some View {
-        VStack {
-            Spacer()
-            Image("Illustration")
-                .resizable()
-                .frame(width: 262, height: 271)
-                .padding(42)
-            Text("Общайтесь с друзьями и близкими легко")
-                .textStyle(with: .neading2)
-                .foregroundColor(Resources.Colors.NeutralColor.active)
-            Spacer()
-            Spacer()
-            
-            
-            Button("Пользовательское соглашение") {
-                //do something
-            }
-            .textStyle(with: .bodyText1)
-            .foregroundColor(Resources.Colors.NeutralColor.active)
-            .padding(18)
-            
-            Button("Начать общаться") {
-                isPresented.toggle()
-            }
-            .buttonStyle(StatefulButtonStyle(size: CGSize(width: 327, height: 52), state: .fillNormal))
-            
-            Spacer()
-            
-            .sheet(isPresented: $isPresented) {
-                    VerificationView()
+        ZStack {
+            Resources.Colors.NeutralColor.whiteForBG
+            .ignoresSafeArea()
+            VStack {
+                Spacer()
+                Image("Illustration")
+                    .resizable()
+                    .frame(width: 262, height: 271)
+                    .padding(42)
+                Text("Общайтесь с друзьями и близкими легко")
+                    .textStyle(with: .neading2)
+                    .foregroundColor(Resources.Colors.NeutralColor.active)
+                Spacer()
+                Spacer()
+                
+                
+                Button("Пользовательское соглашение") {
+                    //do something
                 }
+                .textStyle(with: .bodyText1)
+                .foregroundColor(Resources.Colors.NeutralColor.active)
+                .padding(18)
+                
+                Button("Начать общаться") {
+                    isPresented.toggle()
+                }
+                .buttonStyle(StatefulButtonStyle(size: CGSize(width: 327, height: 52), state: .fillNormal))
+                Spacer()
+                .sheet(isPresented: $isPresented) {
+                        VerificationView()
+                    }
+            }
+            .multilineTextAlignment(.center)
         }
-        .multilineTextAlignment(.center)
+        
     }
 }
 
