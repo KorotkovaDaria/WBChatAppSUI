@@ -1,6 +1,5 @@
 import UIKit
 
-
 class Person {
     var fullName: String
     var age: Int
@@ -63,11 +62,6 @@ class BuildingMaterialsFactory {
         self.titleFactory = title
         print("Factory \(titleFactory) initialized")
     }
-    
-    deinit {
-        print("Factory \(titleFactory) deinitialized")
-    }
-    
     func addCustomer(_ customer: Person) {
         customers.append(customer)
         print("Added customer \(customer.fullName) to factory \(titleFactory)")
@@ -76,9 +70,8 @@ class BuildingMaterialsFactory {
         typeMaterials.append(material)
         print("Added material \(material.name) to factory \(titleFactory)")
     }
-    
-    func saleMaterial() {
-        
+    deinit {
+        print("Factory \(titleFactory) deinitialized")
     }
 }
 
