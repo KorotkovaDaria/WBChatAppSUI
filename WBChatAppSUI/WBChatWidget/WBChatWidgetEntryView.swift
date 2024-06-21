@@ -1,15 +1,14 @@
 //
-//  WBWidgetEntryView.swift
+//  WBChatWidgetEntryView.swift
 //  WBChatAppSUI
 //
-//  Created by Daria on 14.06.2024.
+//  Created by Daria on 21.06.2024.
 //
 
 import WidgetKit
 import SwiftUI
-import Intents
 
-struct WBWidgetEntryView : View {
+struct WBChatWidgetEntryView: View {
     var entry: Provider.Entry
     
     var body: some View {
