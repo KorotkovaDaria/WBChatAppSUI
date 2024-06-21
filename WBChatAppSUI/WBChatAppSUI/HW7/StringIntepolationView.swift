@@ -17,10 +17,32 @@ extension String.StringInterpolation {
     }
 }
 
+//extension String.StringInterpolation {
+//    mutating func appendInterpolation(spellOut date: Date, locale: Locale) {
+//        let calendar = Calendar.current
+//        let components = calendar.dateComponents([.day, .month, .year], from: date)
+//
+//        let formatter = NumberFormatter()
+//        formatter.locale = locale
+//        formatter.numberStyle = .spellOut
+//
+//        if let day = components.day, let month = components.month, let year = components.year {
+//            let dayString = formatter.string(from: NSNumber(value: day)) ?? "\(day)"
+//            let monthString = formatter.string(from: NSNumber(value: month)) ?? "\(month)"
+//            let yearString = formatter.string(from: NSNumber(value: year)) ?? "\(year)"
+//
+//            let formattedDate = "\(dayString) \(monthString), \(yearString)"
+//            appendLiteral(formattedDate)
+//        } else {
+//            appendLiteral("Invalid date")
+//        }
+//    }
+//}
+
 struct StringIntepolationView: View {
     @State var selectedDate = Date()
     @State var selectedLocale = Locale.current
-    
+
     var dateStyle = DateFormatter.Style.long
     let locales: [Locale] = [
         Locale(identifier: "en_US"),
