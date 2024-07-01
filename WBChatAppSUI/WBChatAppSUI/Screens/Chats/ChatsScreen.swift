@@ -2,15 +2,14 @@
 //  ChatsScreen.swift
 //  WBChatAppSUI
 //
-//  Created by Daria on 05.06.2024.
+//  Created by Daria on 01.07.2024.
 //
 
 import SwiftUI
 
 struct ChatsScreen: View {
     var body: some View {
-        Text("💬")
-            .font(Font.system(size: 200))
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 

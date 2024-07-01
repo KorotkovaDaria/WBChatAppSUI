@@ -54,6 +54,8 @@ enum Resources {
             static let tabBarPerson = "person.2"
             static let tabBarChats  = "message"
             static let tabBarMore   = "ellipsis"
+            static let tabBarCountries = "globe.asia.australia"
+            static let tabBarEmoji = "figure.walk.diamond.fill"
         }
     }
 }

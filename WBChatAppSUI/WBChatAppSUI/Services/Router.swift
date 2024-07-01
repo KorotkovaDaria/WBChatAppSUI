@@ -10,6 +10,8 @@ import Foundation
 enum Tabs: Hashable {
     case contacts
     case chats
+    case countries
+    case emoji
     case more
 }
 
@@ -19,7 +21,7 @@ final class Router: ObservableObject {
     
     private init() {}
     
-    @Published var selectedTab: Tabs = .contacts
+    @Published var selectedTab: Tabs = .emoji
     
     func moveToTab(tab: Tabs) {
         selectedTab = tab
